@@ -1,0 +1,9 @@
+
+<div class="row marketing">
+  <ul>
+    <li ng-repeat="list in lists">{{list}}</li>
+  </ul>
+  <br />
+  <input type="text" name="input-list" ng-model="inputList" placeholder="Add something!" />
+  <button type="button" name="add-list" ng-click="addList(inputList)" >Add</button>
+</div>
