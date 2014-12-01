@@ -11,14 +11,13 @@ angular.module('todosApp')
   .controller('MainCtrl', function ($scope) {
   	//$scope.inputList = "";
     $scope.lists = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+      {text: "Go To NoFrills"},
+      {text: "Eating Outside"},
+      {text: "Buy Drinks"},
     ];
 
-    $scope.addList = function(yoh){
-    	// console.log(yoh);
-    	$scope.lists.push(yoh);
+    $scope.addList = function(addlistVal){
+    	$scope.lists.push({text: addlistVal});
     }
 
   });
