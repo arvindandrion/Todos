@@ -8,7 +8,7 @@
   		<div class="input-group">
 			<input type="text" name="input" ng-minlength="3" ng-model="inputList" placeholder="Add something!" class="form-control" required/>
 			<span class="input-group-btn">
-				<button ng-disabled="addlistForm.input.$valid" type="button" name="addlist" ng-click="addToList(inputList)" class="btn btn-default" type="button">Add</button>
+				<button ng-disabled="!addlistForm.input.$valid" type="button" name="addlist" ng-click="addToList(inputList)" class="btn btn-default" type="button">Add</button>
 			</span>
 		</div>
   	</form>
