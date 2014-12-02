@@ -90,3 +90,8 @@ body {
     border-bottom: 0;
   }
 }
+
+.list{
+  ul{margin:0;padding:0;}
+  li{overflow:hidden;padding:4px}
+}

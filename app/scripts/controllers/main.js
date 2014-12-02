@@ -10,14 +10,14 @@
 angular.module('todosApp')
   .controller('MainCtrl', function ($scope) {
   	//$scope.inputList = "";
-    $scope.lists = [
-      {text: "Go To NoFrills"},
-      {text: "Eating Outside"},
-      {text: "Buy Drinks"},
-    ];
+    $scope.lists = [ ];
 
-    $scope.addList = function(addlistVal){
+    $scope.addToList = function(addlistVal){
     	$scope.lists.push({text: addlistVal});
-    }
+    };
+
+    $scope.removeItem = function(index){
+      $scope.lists.splice(index, 1);
+    };
 
   });
